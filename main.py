@@ -22,6 +22,7 @@ soBAKAAAAA.inroduce()
 soBAKAAAAA.eat()
 soBAKAAAAA.sleep()
 
+
 soBAKAAAAA2.inroduce()
 soBAKAAAAA2.eat()
 soBAKAAAAA2.sleep()
