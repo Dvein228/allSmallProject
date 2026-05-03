@@ -11,4 +11,5 @@ class Dog:
 soBAKAAAAA = Dog("Бобиков","15","здорова")
 soBAKAAAAA2= Dog("Крутая","13","не здорова")
 soBAKAAAAA.inroduce()
+
 soBAKAAAAA2.inroduce()
