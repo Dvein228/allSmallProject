@@ -17,6 +17,7 @@ class Character:
     def info(self):
         print("Ім'я:", self.name)
         print("Рівень:", self.level)
+        print(f"Використовує {self.weapon.name} з {self.weapon.damage урона ")
 
 Bow= Weapon("лук","1")
 Axe= Weapon("Акс","375")
