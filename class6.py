@@ -1,6 +1,3 @@
-from itertools import chain
-
-
 class Character:
     def __init__(self, name, level):
         self.name=name
