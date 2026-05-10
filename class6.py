@@ -23,3 +23,5 @@ class Mage(Character):
         self.Magic =Magic
 maga = Mage("Мага","5","темная")
 Warvara = Warior("Варя","7","большая")
+maga.info()
+Warvara.info()
