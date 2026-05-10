@@ -41,10 +41,11 @@ class Character:
 Bow= Weapon("лук",1)
 Axe= Weapon("Акс",375)
 
+iron = Armor("Железа",100)
 skeleton = Enemy("скелет",100)
-LDFGFDGFDGD=Character("Гном-перегном",5,Bow)
-drugoi = Character("Гном",7,Bow)
-EsheDrugoi = Character("НеГном",1,Axe)
+LDFGFDGFDGD=Character("Гном-перегном",5,Bow,iron)
+drugoi = Character("Гном",7,Bow,iron)
+EsheDrugoi = Character("НеГном",1,Axe,iron)
 
 
 drugoi.attack(skeleton)
