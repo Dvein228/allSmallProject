@@ -9,4 +9,5 @@ class Character:
 
 LDFGFDGFDGD=Character("Гном-перегном","5")
 drugoi = Character("Гном","7")
+
 EsheDrugoi = Character("НеГном","1")
