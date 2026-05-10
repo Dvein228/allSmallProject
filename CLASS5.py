@@ -28,9 +28,9 @@ class Character:
         print(f"Використовує {self.weapon.name} з {self.weapon.damage} урона ")
 
     def attack(self, enemy):
-        print(self.nаmе, "атакує", enemy.name)
-        enemy.health = self.weapon.damage
-        print(enemy.пате, "отримав шкоду")
+        print(self.name, "атакує", enemy.name)
+        enemy.health -= self.weapon.damage
+        print(enemy.name, "отримав шкоду")
         print("HP ворога:", enemy.health)
 
 Bow= Weapon("лук",1)
