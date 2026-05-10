@@ -6,6 +6,10 @@ class Enemy:
     def info(self):
         print("Ім'я:", self.name)
         print("ХП:", self.health)
+class Armor:
+    def __init__(self, name, defense):
+        self.name = name
+        self.defense=defense
 
 class Weapon:
     def __init__(self, name, damage):
@@ -17,10 +21,11 @@ class Weapon:
         print("Урон:", self.damage)
 
 class Character:
-    def __init__(self, name, level,weapon,):
+    def __init__(self, name, level,weapon,Armor):
         self.name=name
         self.level=level
         self.weapon = weapon
+        self.armor=Armor
 
     def info(self):
         print("Ім'я:", self.name)
