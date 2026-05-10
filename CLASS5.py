@@ -25,3 +25,6 @@ Axe= Weapon("Акс","375")
 LDFGFDGFDGD=Character("Гном-перегном","5",Bow)
 drugoi = Character("Гном","7",Bow)
 EsheDrugoi = Character("НеГном","1",Axe)
+list = [LDFGFDGFDGD,drugoi,EsheDrugoi]
+for i in list:
+    i.info()
