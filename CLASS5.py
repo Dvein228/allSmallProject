@@ -18,3 +18,7 @@ class Weapon:
 LDFGFDGFDGD=Character("Гном-перегном","5")
 drugoi = Character("Гном","7")
 EsheDrugoi = Character("НеГном","1")
+
+Bow= Weapon("лук","1")
+Axe= Weapon("Акс","375")
+
