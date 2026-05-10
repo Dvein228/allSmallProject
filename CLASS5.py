@@ -17,7 +17,7 @@ class Weapon:
         print("Урон:", self.damage)
 
 class Character:
-    def __init__(self, name, level,weapon):
+    def __init__(self, name, level,weapon,):
         self.name=name
         self.level=level
         self.weapon = weapon
@@ -27,12 +27,19 @@ class Character:
         print("Рівень:", self.level)
         print(f"Використовує {self.weapon.name} з {self.weapon.damage} урона ")
 
-Bow= Weapon("лук","1")
-Axe= Weapon("Акс","375")
+    def attack(self, enemy):
+        print(self.nаmе, "атакує", enemy.name)
+        enemy.health = self.weapon.damage
+        print(enemy.пате, "отримав шкоду")
+        print("HP ворога:", enemy.health)
 
-LDFGFDGFDGD=Character("Гном-перегном","5",Bow)
-drugoi = Character("Гном","7",Bow)
-EsheDrugoi = Character("НеГном","1",Axe)
-list = [LDFGFDGFDGD,drugoi,EsheDrugoi]
-for i in list:
-    i.info()
+Bow= Weapon("лук",1)
+Axe= Weapon("Акс",375)
+
+skeleton = Enemy("скелет",100)
+LDFGFDGFDGD=Character("Гном-перегном",5,Bow)
+drugoi = Character("Гном",7,Bow)
+EsheDrugoi = Character("НеГном",1,Axe)
+
+
+drugoi.attack(skeleton)
