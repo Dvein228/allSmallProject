@@ -7,6 +7,25 @@ class Animal:
     def info(self):
         print(self.age,self.name)
 
+class WildAnimal(Animal):
+    def __init__(self, name, age, danger):
+        super().__init__(name, age)
+        self.danger = danger
+
+    def attack(self):
+        print(self.name, "атакує")
+
+class Lion(WildAnimal):
+    def __init__(self, name, age, danger):
+        super().__init__(name, age, danger)
+        self.roar_power = 100
+
+class Wolf(WildAnimal):
+    def __init__(self, name, age, danger):
+        super().__init__(name, age, danger)
+        self.roar_power = 100
+
+
 class Cat(Animal):
     def __init__(self,wool,age,name):
         super().__init__(age, name)
@@ -23,6 +42,7 @@ class Fish(Animal):
     def info(self):
         super().info()
         print(self.scales)
+
 
 
 carpik = Fish(1,"каРПик",True)
