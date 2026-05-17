@@ -7,11 +7,11 @@ class Animal:
     def info(self):
         print(self.age,self.name)
 
-class herbivores(Animal):
-    def __init__(self,name,age,health):
+class Herbivores(Animal):
+    def __init__(self,name,age,grass):
         super().__init__(name, age)
-        self.health = health
-class Antelope(herbivores):
+        self.grass = grass
+class Antelope(Herbivores):
     def __init__(self,name,age,health,speed):
         super().__init__(name, age,health)
         self.speed = speed
@@ -20,6 +20,7 @@ class Predator(Animal):
     def __init__(self, name, age, danger):
         super().__init__(name, age)
         self.danger = danger
+        self.Food = []
 
     def attack(self):
         print(self.name, "атакує")
