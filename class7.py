@@ -5,6 +5,8 @@ class Animal:
     def info(self):
         print("Ім'я:", self.name)
         print("Вік:", self.age)
+    def voice(self,sound):
+        print(self.name+sound)
 
 class Cat(Animal):
     def __init__(self,wool,age,name):
