@@ -6,11 +6,11 @@ class Animal:
         print("Ім'я:", self.name)
         print("Вік:", self.age)
 
-class Cat(animal):
+class Cat(Animal):
     def __init__(self,wool,age,name):
         super().__init__(age, name)
         self.wool = wool
-class Fish(animal):
+class Fish(Animal):
     def __init__(self,age,name,scales):
         super().__init__(age,name)
         self.scales= scales
