@@ -7,7 +7,16 @@ class Animal:
     def info(self):
         print(self.age,self.name)
 
-class WildAnimal(Animal):
+class herbivores(Animal):
+    def __init__(self,name,age,health):
+        super().__init__(name, age)
+        self.health = health
+class Antelope(herbivores):
+    def __init__(self,name,age,health,speed):
+        super().__init__(name, age,health)
+        self.speed = speed
+
+class Predator(Animal):
     def __init__(self, name, age, danger):
         super().__init__(name, age)
         self.danger = danger
@@ -15,7 +24,7 @@ class WildAnimal(Animal):
     def attack(self):
         print(self.name, "атакує")
 
-class Lion(WildAnimal):
+class Lion(Predator):
     def __init__(self, name, age, danger):
         super().__init__(name, age, danger)
         self.roar_power = 100
