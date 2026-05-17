@@ -20,12 +20,6 @@ class Lion(WildAnimal):
         super().__init__(name, age, danger)
         self.roar_power = 100
 
-class Wolf(WildAnimal):
-    def __init__(self, name, age, danger):
-        super().__init__(name, age, danger)
-        self.roar_power = 100
-
-
 class Cat(Animal):
     def __init__(self,wool,age,name):
         super().__init__(age, name)
