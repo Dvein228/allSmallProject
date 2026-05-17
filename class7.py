@@ -10,3 +10,7 @@ class cat(animal):
     def __init__(self,wool,age,name):
         super().__init__(age, name)
         self.wool = wool
+class fish(animal):
+    def __init__(self,age,name):
+        super().__init__(age,name,scales)
+        self.scales= scales
