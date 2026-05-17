@@ -16,4 +16,4 @@ class Fish(Animal):
         self.scales= scales
 
 
-carpik = Fish(15,"каРПик","присутствует")
+carpik = Fish(1,"каРПик","присутствует")
