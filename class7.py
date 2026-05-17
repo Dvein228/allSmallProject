@@ -20,4 +20,7 @@ class Fish(Animal):
         print(self.name+":буль")
 
 
-carpik = Fish(1,"каРПик","присутствует")
+carpik = Fish(1,"каРПик",True)
+cotak = Cat(True,7,"Котак")
+carpik.bulk()
+cotak.meow()
