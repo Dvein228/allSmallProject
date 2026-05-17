@@ -14,3 +14,6 @@ class Fish(Animal):
     def __init__(self,age,name,scales):
         super().__init__(age,name)
         self.scales= scales
+
+
+carpik = Fish(15,"каРПик","присутствует")
