@@ -2,9 +2,6 @@ class Animal:
     def __init__(self,age,name):
         self.age=age
         self.name=name
-    def info(self):
-        print("Ім'я:", self.name)
-        print("Вік:", self.age)
     def voice(self,sound):
         print(f"{self.name} делает {sound}")
 
